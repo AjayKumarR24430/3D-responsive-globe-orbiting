@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+This is a React application that displays a 3D globe with satellite data points that can be filtered and searched. The application uses the react-globe.gl library to display the globe and the Papaparse library to parse CSV data. The user can search for specific satellites using the search bar, and when a data point is hovered over, information about that point is displayed in a card.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+To get started with this application, first clone this repository to your local machine. Then, navigate to the project directory and run the following commands:
 
-In the project directory, you can run:
+``` 
+npm install
+npm start ```
 
-### `npm start`
+This will install the required dependencies and start the development server. The application should now be accessible at http://localhost:3000.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Usage
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Upon opening the application, the user will see a 3D globe with satellite data points plotted on it. The user can use the search bar on the left-hand side of the screen to search for a specific satellite by ID. When a satellite is selected, the globe will update to display only that satellite's data points.
 
-### `npm test`
+When the user hovers over a data point, a card will appear on the left-hand side of the screen with information about that point, including its latitude, longitude, altitude, and the time at which the satellite was at that location.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The globe can be interacted with by clicking and dragging to rotate the view. Zooming can be done using the scroll wheel or by pinching on touch screens.
 
-### `npm run build`
+## File Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* src/App.js: The main component that renders the application.
+* src/index.js: The entry point for the application.
+* public/test_data.csv: A sample CSV file containing satellite data.
+* public/images/*: A texture image for the 3D globe. A background image for the 3D globe.
+* package.json: Configuration file for the project dependencies.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Libraries Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* react-globe.gl: A library for rendering 3D globes in React applications.
+* Papaparse: A fast and powerful CSV parser that can handle large files.
 
-### `npm run eject`
+## Future Improvements
+There are several areas in which this application could be improved:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* The search functionality could be expanded to include more search criteria.
+* Additional information could be displayed in the hover card, such as the satellite's velocity or direction of travel.
+* The globe could be made interactive in more ways, such as allowing the user to select a specific point and zoom in on it.
+* The application could be optimized for performance, particularly when handling large datasets.

@@ -1,6 +1,8 @@
 This is a React application that displays a 3D globe with satellite data points that can be filtered and searched. The application uses the react-globe.gl library to display the globe and the Papaparse library to parse CSV data. The user can search for specific satellites using the search bar, and when a data point is hovered over, information about that point is displayed in a card.
 
-## Getting Started
+# Getting Started
+
+## Local Deployment
 
 To get started with this application, first clone this repository to your local machine. Then, navigate to the project directory and run the following commands:
 
@@ -10,6 +12,16 @@ npm start
 ```
 
 This will install the required dependencies and start the development server. The application should now be accessible at http://localhost:3000.
+
+## AWS EC2 Deployment
+
+1. Create an EC2 instance on AWS and configure it to your needs (e.g. select an appropriate AMI, instance type, and security group).
+2. Connect to the instance via SSH.
+3. Install Node.js and npm on the instance.
+4. Clone the repository to the instance using git clone.
+5. Navigate to the project directory and run npm install to install the required dependencies.
+6. Run npm start to start the development server.
+7. You can now access the application by entering the instance's public IP address into a web browser.
 
 ## Usage
 

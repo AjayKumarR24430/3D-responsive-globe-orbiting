@@ -6,7 +6,8 @@ To get started with this application, first clone this repository to your local 
 
 ``` 
 npm install
-npm start ```
+npm start
+```
 
 This will install the required dependencies and start the development server. The application should now be accessible at http://localhost:3000.
 

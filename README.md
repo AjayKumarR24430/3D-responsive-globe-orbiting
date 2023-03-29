@@ -48,6 +48,8 @@ The globe can be interacted with by clicking and dragging to rotate the view. Zo
 
 ![alt text](./public/images/sample_ss1.png)
 
+![alt text](./public/images/sample_ss2.png)
+
 ## Future Improvements
 There are several areas in which this application could be improved:
 

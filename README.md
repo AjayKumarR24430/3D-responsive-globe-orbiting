@@ -44,6 +44,10 @@ The globe can be interacted with by clicking and dragging to rotate the view. Zo
 * react-globe.gl: A library for rendering 3D globes in React applications.
 * Papaparse: A fast and powerful CSV parser that can handle large files.
 
+## Sample Screenshots
+
+![alt text](./public/images/sample_ss1.png)
+
 ## Future Improvements
 There are several areas in which this application could be improved:
 
